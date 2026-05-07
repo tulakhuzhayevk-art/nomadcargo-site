@@ -3,6 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Nomad Cargo | From China to the World",
+
   description:
     "Премиальные контейнерные и грузовые перевозки из Китая в 97 стран мира. Морем, воздухом, ЖД.",
 
@@ -15,7 +16,9 @@ export const metadata: Metadata = {
   ],
 
   icons: {
-    icon: "/favicon.ico",
+    icon: [{ url: "/icon.ico?v=10", type: "image/x-icon" }],
+    shortcut: ["/icon.ico?v=10"],
+    apple: ["/icon.ico?v=10"],
   },
 
   openGraph: {
@@ -35,6 +38,7 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
