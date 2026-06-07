@@ -16,7 +16,6 @@ import {
   Phone,
   Plane,
   Search,
-  Send,
   ShieldCheck,
   Ship,
   Truck,
@@ -2402,13 +2401,6 @@ pageUrl: window.location.href,
           </div>
         </a>
 
-        <a className="contact-premium-item contact-premium-link-card" href="https://t.me/kamronnomad" target="_blank" rel="noreferrer">
-          <div className="contact-premium-icon"><Send size={18} /></div>
-          <div>
-            <div className="contact-premium-item-label">Telegram</div>
-            <div className="contact-premium-item-value">@kamronnomad</div>
-          </div>
-        </a>
 
         <div className="contact-premium-item">
           <div className="contact-premium-icon"><Phone size={18} /></div>
@@ -2420,10 +2412,6 @@ pageUrl: window.location.href,
       </div>
 
       <div className="contact-premium-socials">
-        <a className="contact-premium-social" href="https://t.me/kamronnomad" target="_blank" rel="noreferrer">
-          <Send size={16} />
-          Telegram
-        </a>
 
         <a className="contact-premium-social" href="https://wa.me/8619878638724" target="_blank" rel="noreferrer">
           <MessageCircle size={16} />
@@ -2671,7 +2659,6 @@ pageUrl: window.location.href,
             <div className="footer-col-title">{t.footerContacts}</div>
             <ul className="footer-links">
               <li><a href="https://wa.me/8619878638724" target="_blank" rel="noreferrer">WhatsApp: +86 198 7863 8724</a></li>
-              <li><a href="https://t.me/kamronnomad" target="_blank" rel="noreferrer">Telegram: @kamronnomad</a></li>
               <li><span>WeChat: +86 198 7863 8724</span></li>
             </ul>
           </div>
@@ -2691,10 +2678,6 @@ pageUrl: window.location.href,
           <Phone />
           <span>{t.floatQuote}</span>
         </a>
-        <a href="https://t.me/kamronnomad" target="_blank" rel="noreferrer" className="float-btn float-btn-tg">
-          <Send />
-          <span>{t.floatTelegram}</span>
-        </a>
         <a href="https://wa.me/8619878638724" target="_blank" rel="noreferrer" className="float-btn float-btn-wa">
           <MessageCircle />
           <span>{t.floatWhatsapp}</span>
@@ -2702,7 +2685,7 @@ pageUrl: window.location.href,
       </div>
 
       <div className={`popup-overlay ${quoteOpen ? "open" : ""}`}>
-        <div className="popup-box">``
+      <div className="popup-box">
           <button className="popup-close" onClick={() => setQuoteOpen(false)} aria-label="Close">
             <X />
           </button>
