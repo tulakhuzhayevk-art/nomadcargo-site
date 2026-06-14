@@ -117,6 +117,8 @@ export async function POST(req: Request) {
     });
 
     const bitrixData = await bitrixResponse.json();
+    console.log("BITRIX STATUS:", bitrixResponse.status);
+console.log("BITRIX RESPONSE:", bitrixData);
 
     if (!bitrixResponse.ok || bitrixData.error) {
       return NextResponse.json(
